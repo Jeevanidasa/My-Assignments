@@ -18,19 +18,17 @@ public class CreatLead {
 	driver.findElement(By.linkText("CRM/SFA")).click();
 	driver.findElement(By.linkText("Leads")).click();
 	driver.findElement(By.linkText("Create Lead")).click();
-	//To pass the values to a form
+	//To pass the values to form
 	driver.findElement(By.id("createLeadForm_companyName")).sendKeys("Jeeva Test Company");
 	driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Jeevani");
 	driver.findElement(By.id("createLeadForm_lastName")).sendKeys("G");
 	driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("Jeeva");
 	driver.findElement(By.name("departmentName")).sendKeys("Quality Analyst");
 	driver.findElement(By.name("description")).sendKeys("Test the program");
-	driver.findElement(By.name("primaryEmail")).sendKeys("jeevaniraodasa@gmail.com");
+	driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("jeevaniraodasa@gmail.com");
 	driver.findElement(By.className("smallSubmit")).click();
 	String title=driver.getTitle();
 	System.out.println(title);
 	
 	}
 	}
-
-
