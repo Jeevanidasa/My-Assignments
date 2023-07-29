@@ -26,7 +26,7 @@ public class EditLead {
 	driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("Jeeva");
 	driver.findElement(By.name("departmentName")).sendKeys("Quality Analyst");
 	driver.findElement(By.name("description")).sendKeys("Test the program");
-	driver.findElement(By.name("primaryEmail")).sendKeys("jeevaniraodasa@gmail.com");
+	driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("jeevaniraodasa@gmail.com");
 	driver.findElement(By.className("smallSubmit")).click();
 	//Edit description
 	driver.findElement(By.linkText("Edit")).click();
@@ -35,7 +35,5 @@ public class EditLead {
 	driver.findElement(By.name("submitButton")).click();
 	String title=driver.getTitle();
 	System.out.println(title);
-
 	}
-
 }
